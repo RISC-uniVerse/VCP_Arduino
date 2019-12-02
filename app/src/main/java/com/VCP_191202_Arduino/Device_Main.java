@@ -216,11 +216,9 @@ public class Device_Main extends Activity {
 
     //mDatafield(layout의 온도표시창에 전달)에 수신한 Data를 display하는 method
     private void displayData() {
-        int Arduino = data_arr.length-2;
-        int RISC_V = data_arr.length;
         temp="";
         if ((data_arr[8] == '+')||(data_arr[8] == '-')){
-            for (int i=9; i<RISC_V; i++) {
+            for (int i=9; i<data_arr.length; i++) {
                 if ((('0' <= data_arr[i]) && (data_arr[i] <= '9'))||(data_arr[i]=='.')){
                     temp += Character.toString(data_arr[i]);
                 } else{

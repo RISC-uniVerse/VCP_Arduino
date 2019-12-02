@@ -1,0 +1,4 @@
+#Mon Dec 02 19:48:50 KST 2019
+base.0=/Users/hwanghyunsub/AndroidStudioProjects/VCP_191202_Final/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

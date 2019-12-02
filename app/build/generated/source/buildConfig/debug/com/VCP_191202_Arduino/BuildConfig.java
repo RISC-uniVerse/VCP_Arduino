@@ -1,7 +1,7 @@
 /**
  * Automatically generated file. DO NOT MODIFY
  */
-package com.VCP_191202_Final;
+package com.VCP_191202_Arduino;
 
 public final class BuildConfig {
   public static final boolean DEBUG = Boolean.parseBoolean("true");

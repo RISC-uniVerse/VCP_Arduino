@@ -1,4 +1,4 @@
-package com.VCP_191202_Final;
+package com.VCP_191202_Arduino;
 // AndroidManifest.xml <Application> 내 android:name=".MyApplication" 코드 추가 필수
 
 import android.app.Application;

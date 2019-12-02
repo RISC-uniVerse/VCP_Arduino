@@ -1,11 +1,11 @@
-package com.VCP_191202_Final;
+package com.VCP_191202_Arduino;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import static com.VCP_191202_Final.Device_Main.mConnected;
+import static com.VCP_191202_Arduino.Device_Main.mConnected;
 
 public class Device_Boot extends Activity {
 

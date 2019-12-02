@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.VCP_191202_Final;
+package com.VCP_191202_Arduino;
 
 import android.app.Service;
 import android.bluetooth.BluetoothAdapter;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.VCP_191202_Final;
+package com.VCP_191202_Arduino;
 
 import android.app.Activity;
 import android.bluetooth.BluetoothGattCharacteristic;
@@ -43,7 +43,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.UUID;
 import android.widget.Toast;
-import static com.VCP_191202_Final.BluetoothLeService.ACTION_DATA_AVAILABLE;
+import static com.VCP_191202_Arduino.BluetoothLeService.ACTION_DATA_AVAILABLE;
 
 /**
  * For a given BLE device, this Activity provides the user interface to connect, display data,
@@ -203,11 +203,11 @@ public class Device_Main extends Activity {
     }
 
     private void dot_check() {
-        for (dot_check_int = 9; dot_check_int < data_arr.length; dot_check_int++) {
+        for (dot_check_int = 9; dot_check_int < data_arr.length-2; dot_check_int++) {
             if (data_arr[dot_check_int] == '.')
                 break;
         }
-        if (dot_check_int == data_arr.length) {
+        if (dot_check_int == data_arr.length-2) {
             mDataField.setText("NO DATA");
             temp = "NO DATA";
         } else
@@ -218,7 +218,7 @@ public class Device_Main extends Activity {
     private void displayData() {
         temp="";
         if ((data_arr[8] == '+')||(data_arr[8] == '-')){
-            for (int i=9; i<data_arr.length; i++) {
+            for (int i=9; i<data_arr.length-2; i++) {
                 if ((('0' <= data_arr[i]) && (data_arr[i] <= '9'))||(data_arr[i]=='.')){
                     temp += Character.toString(data_arr[i]);
                 } else{

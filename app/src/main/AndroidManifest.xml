@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.VCP_191202_Final">
+    package="com.VCP_191202_Arduino">
 
     <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
     <uses-permission android:name="android.permission.BLUETOOTH" />
@@ -8,12 +8,12 @@
     <uses-permission android:name="android.permission.VIBRATE"/>
 
     <application
-        android:name="com.VCP_191202_Final.MyApplication"
+        android:name="com.VCP_191202_Arduino.MyApplication"
         android:icon="@drawable/ic_launcher"
         android:theme="@android:style/Theme.Holo.Light"
         android:label="@string/app_name">
         <activity
-            android:name="com.VCP_191202_Final.Device_Boot"
+            android:name="com.VCP_191202_Arduino.Device_Boot"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -21,14 +21,14 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.VCP_191202_Final.Device_Scan"
+        <activity android:name="com.VCP_191202_Arduino.Device_Scan"
             android:theme="@android:style/Theme.Holo.Light"
             />
-        <activity android:name="com.VCP_191202_Final.Device_Main"
+        <activity android:name="com.VCP_191202_Arduino.Device_Main"
             android:launchMode = "singleTask"/>
-        <service android:name="com.VCP_191202_Final.BluetoothLeService" android:enabled="true"/>
+        <service android:name="com.VCP_191202_Arduino.BluetoothLeService" android:enabled="true"/>
         <activity
-            android:name="com.VCP_191202_Final.WarningPopUp" android:theme="@android:style/Theme.Dialog"
+            android:name="com.VCP_191202_Arduino.WarningPopUp" android:theme="@android:style/Theme.Dialog"
             android:launchMode = "singleTask"/>
     </application>
 </manifest>

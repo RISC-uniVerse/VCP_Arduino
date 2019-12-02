@@ -1,4 +1,4 @@
-package com.VCP_191202_Final;
+package com.VCP_191202_Arduino;
 
 import android.app.Activity;
 import android.app.Notification;
@@ -62,7 +62,7 @@ public class WarningPopUp extends Activity {
         ///Notification Bar 띄우는 작업 실행
         intent = PendingIntent.getActivity(this, 0,
                 //Notification Bar 클릭 시 Device_Main으로 이동
-                new Intent(getApplicationContext(), com.VCP_191202_Final.Device_Main.class), PendingIntent.FLAG_UPDATE_CURRENT);
+                new Intent(getApplicationContext(), com.VCP_191202_Arduino.Device_Main.class), PendingIntent.FLAG_UPDATE_CURRENT);
         Notification.Builder builder = new Notification.Builder(this)
 
 
